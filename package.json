@@ -1,9 +1,12 @@
 {
+  "homepage": "https://BMJargal.github.io/IT_SPA",
   "name": "it-spa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start:db": "json-server --watch database.json",
     "start:app": "parcel ./index.html --open"
   },
@@ -12,6 +15,7 @@
   "license": "UNLICENSED",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.2.1",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.15.1",
     "parcel-bundler": "^1.12.5",
     "sass": "^1.49.0"

@@ -1,12 +1,10 @@
 {
-  "homepage": "https://BMJargal.github.io/IT_SPA",
   "name": "it-spa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projekt polega na napisaniu aplikacji Single Page Application dla ośrodka SPA dedykowanego programistom.",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+
     "start:db": "json-server --watch database.json",
     "start:app": "parcel ./index.html --open"
   },
@@ -23,6 +21,15 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.0",
-    "litepicker": "^2.0.12"
+    "litepicker": "^2.0.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BMJargal/IT-SPA.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BMJargal/IT-SPA/issues"
   }
 }

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-
 html,
 body {
   max-width: 1024px;
@@ -88,15 +87,27 @@ main {
   }
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
+    justify-content: flex-start;
 
     li {
       background-color: #b1e67f;
       box-shadow: #00576e 0 2px 8px 2px;
       color: #000000;
-      padding: 1rem;
       border-radius: 5px;
+      border: 1px solid #444;
+      padding: 1rem;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-basis: 20vw;
+      display: flex;
 
       button,
       .btn {
@@ -136,6 +147,34 @@ main {
     h4,
     h5,
     h6 {
+    }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    main {
+      ul {
+        li {
+          flex-basis: 40vw;
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    main {
+      ul {
+        li {
+          flex-basis: 30vw;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    main {
+      ul {
+        li {
+          flex-basis: 80vw;
+        }
+      }
     }
   }
 }

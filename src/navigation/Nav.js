@@ -23,6 +23,8 @@ export function Nav() {
   img.style.width = "8vw";
   const nav = document.createElement("nav");
 
+  // class="topnav"
+
   const navButtons = navItems.map((navItem) => {
     return NavButton(navItem.name, navItem.component, ["btn"]);
   });
